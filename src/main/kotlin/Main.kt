@@ -1,3 +1,4 @@
+
 fun main(args: Array<String>) {
     printMessage("Hello")
     printMessageWithPrefix("Hello", "Log")
@@ -21,4 +22,7 @@ fun main(args: Array<String>) {
     )
 
     log("a", "b", "c")
+
+    val stack = mutableStackOf(0.62, 3.14, 2.7)
+    println(stack)
 }
