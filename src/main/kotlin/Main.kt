@@ -48,4 +48,19 @@ fun main(args: Array<String>) {
 
     println("name = ${user.component1()}")                 // 10
     println("id = ${user.component2()}")
+
+    val state = State.RUNNING
+    val message = when(state) {
+        State.IDLE -> "アイドル状態"
+        State.RUNNING -> "実行中"
+        State.FINISHED -> "実行完了"
+    }
+    println(message)
+
+    val red = Color.RED
+    println(red)
+    println(red.containesRed())
+    println(Color.BLUE.containesRed())
+    println(Color.YELLOW.containesRed())
+    println(Color.GREEN.containesRed())
 }
