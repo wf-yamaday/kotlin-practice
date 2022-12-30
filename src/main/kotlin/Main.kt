@@ -63,4 +63,10 @@ fun main(args: Array<String>) {
     println(Color.BLUE.containesRed())
     println(Color.YELLOW.containesRed())
     println(Color.GREEN.containesRed())
+
+    println(greetMammal(Cat("Snowy")))
+
+    DoAuth.takeParams("foo", "qwerty")
+
+    BigBen.getBongs(12)
 }
