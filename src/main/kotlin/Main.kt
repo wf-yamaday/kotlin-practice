@@ -1,7 +1,24 @@
 fun main(args: Array<String>) {
-    println("Hello World!")
+    printMessage("Hello")
+    printMessageWithPrefix("Hello", "Log")
+    printMessageWithPrefix("Hello")
+    println(sum(1, 2))
+    println(multiply(2, 4))
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+    val pair = "Ferrari" to "Katrina"
+    println(pair)
+
+    val sophia = Person("Sophia")
+    val claudia = Person("Claudi")
+    sophia likes claudia
+
+    printAll("Hello", "World")
+    printAll("Hello", "World", "こんにちは", "世界")
+
+    printAllWithPrefix(
+        "Hello", "World",
+        prefix = "Log: "
+    )
+
+    log("a", "b", "c")
 }
